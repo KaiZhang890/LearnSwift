@@ -13,6 +13,7 @@
 		4B3A34301B451719009B835C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3A342F1B451719009B835C /* Images.xcassets */; };
 		4B3A34331B451719009B835C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B3A34311B451719009B835C /* LaunchScreen.xib */; };
 		4B3A343F1B451719009B835C /* LearnSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3A343E1B451719009B835C /* LearnSwiftTests.swift */; };
+		4BEE988D1B4A878600DED179 /* LoggingPrintln.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEE988C1B4A878600DED179 /* LoggingPrintln.swift */; };
 		CD90AD90AB20DC3C12828CB9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C808903248987995D39C419 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		4B3A34381B451719009B835C /* LearnSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B3A343D1B451719009B835C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B3A343E1B451719009B835C /* LearnSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSwiftTests.swift; sourceTree = "<group>"; };
+		4BEE988C1B4A878600DED179 /* LoggingPrintln.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingPrintln.swift; sourceTree = "<group>"; };
 		B0909FBF45FB3E22652C60CE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 				4B3A342F1B451719009B835C /* Images.xcassets */,
 				4B3A34311B451719009B835C /* LaunchScreen.xib */,
 				4B3A34261B451719009B835C /* Supporting Files */,
+				4BEE988C1B4A878600DED179 /* LoggingPrintln.swift */,
 			);
 			path = LearnSwift;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BEE988D1B4A878600DED179 /* LoggingPrintln.swift in Sources */,
 				4B3A342B1B451719009B835C /* ViewController.swift in Sources */,
 				4B3A34291B451719009B835C /* AppDelegate.swift in Sources */,
 			);
@@ -418,6 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LearnSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) -D DEBUG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -429,6 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LearnSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

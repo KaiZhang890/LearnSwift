@@ -291,8 +291,11 @@ class ViewController: UIViewController {
 //            }
         Alamofire.request(.GET, "http://httpbin.org/get")
             .responseJSON { (_, _, JSON, _) in
-                println(JSON)
+                loggingPrintln(JSON)
         }
+        
+        loggingPrintln("show log info1")
+        loggingPrintln("show log info2")
     }
 
     override func didReceiveMemoryWarning() {
